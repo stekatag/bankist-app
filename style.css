@@ -1,9 +1,3 @@
-/*
- * Use this CSS to learn some intersting techniques,
- * in case you're wondering how I built the UI.
- * Have fun! 😁
- */
-
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +27,23 @@ nav {
 .welcome {
   font-size: 1.9rem;
   font-weight: 500;
+}
+
+.login__message {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login__header {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.login__description {
+  font-size: 1.8rem;
 }
 
 .logo {

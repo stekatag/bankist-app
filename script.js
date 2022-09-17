@@ -76,6 +76,7 @@ const labelSumInterest = document.querySelector('.summary__value--interest');
 const labelTimer = document.querySelector('.timer');
 
 const containerApp = document.querySelector('.app');
+const containerWelcome = document.querySelector(".login__message")
 const containerMovements = document.querySelector('.movements');
 
 const btnLogin = document.querySelector('.login__btn');
@@ -206,6 +207,7 @@ const startLogOutTimer = function () {
       clearInterval(timer);
       labelWelcome.textContent = "Log in to get started";
       containerApp.style.opacity = 0;
+      containerWelcome.style.opacity = 100;
     }
 
     // Decrease 1s
@@ -243,6 +245,7 @@ btnLogin.addEventListener('click', function (e) {
     labelWelcome.textContent = `Welcome back, ${currentAccount.owner.split(' ')[0]
       }`;
     containerApp.style.opacity = 100;
+    containerWelcome.style.opacity = 0;
 
     // Create current date and time
     const now = new Date();
@@ -349,6 +352,7 @@ btnClose.addEventListener('click', function (e) {
 
     // Hide UI
     containerApp.style.opacity = 0;
+    containerWelcome.style.opacity = 100;
     labelWelcome.textContent = "Log in to get started"
   }
 

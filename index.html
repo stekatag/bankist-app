@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" type="image/png" href="/icon.png" />
+    <link rel="icon" href="img/icon.png" />
 
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
@@ -18,11 +18,11 @@
     <!-- TOP NAVIGATION -->
     <nav>
       <p class="welcome">Log in to get started</p>
-      <img src="logo.png" alt="Logo" class="logo" />
+      <img src="img/logo.png" alt="Logo" class="logo" />
       <form class="login">
         <input
           type="text"
-          placeholder="user"
+          placeholder="User"
           class="login__input login__input--user"
         />
         <!-- In practice, use type="password" -->
@@ -35,6 +35,11 @@
         <button class="login__btn">&rarr;</button>
       </form>
     </nav>
+
+    <div class="login__message">
+      <h2 class="login__header">Welcome to the Bankist App</h2>
+      <p class="login__description">Please, log in with one of the demo accounts to dive in</p>
+    </div>
 
     <main class="app">
       <!-- BALANCE -->
