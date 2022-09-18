@@ -70,8 +70,8 @@
   }
 }
 
-@media screen and (max-height: 33em) {
+@media screen and (max-height: 25em) {
   .login__message {
-    margin-top: 8rem;
+    margin-top: 16rem;
   }
 }
