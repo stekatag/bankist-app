@@ -68,5 +68,10 @@
   .logout-timer {
     text-align: center;
   }
+}
 
+@media screen and (max-height: 33em) {
+  .login__message {
+    margin-top: 8rem;
+  }
 }
