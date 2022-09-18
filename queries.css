@@ -61,8 +61,18 @@
   }
   
   .btn--sort {
-    margin: 0.5rem 0 0 0;
+    grid-column: -2 / -1;
+    margin: 0.8rem 0 0 0;
+    padding: 0.5rem 2rem;
+    border-radius: 10rem;
+    background-color: #66c873;
+    color: #fff;
     justify-self: start;
+  }
+
+  .btn--sort:hover,
+  .btn--sort:focus {
+    color: #f0f0f0;
   }
 
   .logout-timer {
@@ -72,6 +82,6 @@
 
 @media screen and (max-height: 25em) {
   .login__message {
-    margin-top: 16rem;
+    margin-top: 12rem;
   }
 }
