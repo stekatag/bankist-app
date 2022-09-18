@@ -11,9 +11,11 @@
   }
 }
 
+/* TABLETS */
 @media (max-width: 44em) {
   .app {
     grid-template-columns: 1fr;
+    margin-bottom: 2.4rem;
   }
 
   .balance {
@@ -24,8 +26,14 @@
     margin-top: 2rem;
   }
 
+  .logout-timer {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
 }
 
+/* PHONES */
 @media (max-width: 34em) {
   nav {
     display: grid;
@@ -75,11 +83,10 @@
     color: #f0f0f0;
   }
 
-  .logout-timer {
-    text-align: center;
-  }
+
 }
 
+/* FIX FOR LOGIN MESSAGE WHEN TYPING */
 @media screen and (max-height: 25em) {
   .login__message {
     margin-top: 12rem;

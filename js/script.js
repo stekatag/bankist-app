@@ -165,6 +165,10 @@ const calcDisplaySummary = function (acc) {
   labelSumInterest.textContent = formatCur(interest, acc.locale, acc.currency);
 };
 
+/**
+ * This function takes an array of accounts and creates a username for each account
+ * @param accs - an array of objects
+ */
 const createUsernames = function (accs) {
   accs.forEach(function (acc) {
     acc.username = acc.owner
@@ -187,6 +191,8 @@ const updateUI = function (acc) {
   calcDisplaySummary(acc);
 };
 
+/* A function that starts a timer that counts down from 5 minutes. When the timer reaches 0, it
+logs out the user. */
 const startLogOutTimer = function () {
   const tick = function () {
     const min = `${Math.trunc(time / 60)}`.padStart(2, 0);
@@ -219,7 +225,7 @@ const startLogOutTimer = function () {
 // Event handlers
 let currentAccount, timer;
 
-// FAKE ALWAYS LOGGED IN
+// FAKE ALWAYS LOGGED IN (for testing)
 // currentAccount = account1;
 // updateUI(currentAccount);
 // containerApp.style.opacity = 100;
@@ -348,3 +354,8 @@ btnSort.addEventListener('click', function (e) {
   displayMovements(currentAccount, !sorted);
   sorted = !sorted;
 });
+
+// Set current year
+const yearEl = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;
