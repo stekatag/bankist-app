@@ -191,6 +191,26 @@ const updateUI = function (acc) {
   calcDisplaySummary(acc);
 };
 
+
+/**
+ * This functions displays a greeting to the user.
+ * @param name - the name of the person to welcome
+ */
+const printWelcome = function (name) {
+  const now = new Date();
+  const greetings = new Map([
+    [[6, 7, 8, 9, 10], 'Good Morning'],
+    [[11, 12, 13, 14], 'Good Day'],
+    [[15, 16, 17, 18], 'Good Afternoon'],
+    [[19, 20, 21, 22], 'Good Evening'],
+    [[23, 0, 1, 2, 3, 4, 5], 'Good Night'],
+  ]);
+
+  const arr = [...greetings.keys()].find(key => key.includes(now.getHours()));
+  const greet = greetings.get(arr);
+  labelWelcome.textContent = `${greet}, ${name}!`;
+};
+
 /* A function that starts a timer that counts down from 5 minutes. When the timer reaches 0, it
 logs out the user. */
 const startLogOutTimer = function () {
@@ -240,8 +260,7 @@ btnLogin.addEventListener('click', function (e) {
 
   if (currentAccount?.pin === +inputLoginPin.value) {
     // Display UI and message
-    labelWelcome.textContent = `Welcome back, ${currentAccount.owner.split(' ')[0]
-      }`;
+    printWelcome(currentAccount.owner.split(" ")[0])
     containerApp.style.opacity = 100;
     containerWelcome.style.opacity = 0;
 
