@@ -15,6 +15,6 @@ Log in with one of these accounts to take a look at the app's features.
 | js | 3333 |
 
 ## 👀 Bankist Website
-Check out the Bankist App's landing page (here)[https://stekatag.github.io/bankist-website]
+Check out the Bankist App's landing page [here](https://stekatag.github.io/bankist-website)
 
 © Copyright by Jonas Schmedtmann. Made for learning purposes only.
