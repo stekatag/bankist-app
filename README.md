@@ -17,4 +17,4 @@ Log in with one of these accounts to review the app's features.
 ## 👀 Bankist Website
 Check out the Bankist App's landing page [here](https://stekatag.github.io/bankist-website)
 
-© Copyright by Stefan Gogov. Made for learning purposes only!.
+© Copyright by Stefan Gogov. Made for learning purposes only!
